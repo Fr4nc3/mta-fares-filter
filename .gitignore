@@ -1,0 +1,7 @@
+
+py-ETL/venv/*
+py-ETL/.idea/*
+py-ETL/csv_files/*
+py-ETL/__pycache__/*
+py-ETL/csv/*
+py-ETL/sql/*
