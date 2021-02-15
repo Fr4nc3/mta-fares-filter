@@ -83,6 +83,7 @@ curl -X POST "https://localhost:5001/api/taxizone" -H  "accept: application/json
 ### Class Library .Net Core
 
 A class library package to easily distribute, share, and reuse by other developers who want to implement the same functionality.
+
 ![Type of Example](images/Add_rest_client_To_library.png)
 
 - Implemented Using the Swagger structure of the Rest API
@@ -245,17 +246,17 @@ CREATE TABLE `taxi_zone` (
 
 ### FHV dataset structure
 
-Descrition: \
+Description: \
 ![Type of Example](images/tlc_fhv_description.png)
 
 ### Yellow dataset structure
 
-Descrition: \
+Description: \
 ![Type of Example](images/tlc_data_01.png)
 
 ### Green dataset structure
 
-Descrition: \
+Description: \
 ![Type of Example](images/tlc_data_description.png)
 
 ### Python ETL
@@ -310,7 +311,7 @@ with open('csv/fhv_tripdata_2018-01.csv', 'r') as f:
 
 ```
 
-Descrition: \
+Description: \
 ![Type of Example](images/tlc_fhv_description.png)
 
 - Yellow datase to datatrip table
