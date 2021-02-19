@@ -217,8 +217,8 @@ namespace FunctionalTest
                 Limit = 100,
                 Pickup = "Brook",
                 Dropoff = "Brook", 
-                StartDate = "01/03/2018",
-                EndDate = "01/03/2018",
+                StartDate = "2018-01-03",
+                EndDate = "2018-01-03",
             };
             // Act
             var resultObject = await client.GetTripDataResultsAsync(body: tripFilter);

@@ -33,7 +33,7 @@ namespace demo_mta_fares.Models
         public bool validateCarType => CarType == null ? true : CarType != null && (CarType.ToLower() == "any" || CarType.ToLower() == "yellow" || CarType.ToLower() == "green");
 
         [JsonIgnore]
-        [Range(typeof(bool), "true", "true", ErrorMessage = "invalid StartDate  MM/DD/YYYY")]
+        [Range(typeof(bool), "true", "true", ErrorMessage = "invalid StartDate YYYY-MM-DD")]
         public bool validateStartDate // if StartDates we validates
         {
             get
@@ -49,7 +49,7 @@ namespace demo_mta_fares.Models
         }
 
         [JsonIgnore]
-        [Range(typeof(bool), "true", "true", ErrorMessage = "invalid EndDate MM/DD/YYYY ")]
+        [Range(typeof(bool), "true", "true", ErrorMessage = "invalid EndDate YYYY-MM-DD ")]
         public bool validateEndDate // if EndDate comes we validate 
         {
             get
