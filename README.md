@@ -196,7 +196,7 @@ Test Project uses Class Library to test API structure
 
 ```JSON
   "ConnectionStrings": {
-    "DefaultConnection": "server=fr4nc3.com; port=3306; database=frfounct_mta_demo; user=frfounct_mta_demo; password=mta.demo.2021; Persist Security Info=False; Connect Timeout=300"
+    "DefaultConnection": "server=LOCALHOST; port=3306; database=demo; user=demo; password=demo; Persist Security Info=False; Connect Timeout=300"
   }
 ```
 
