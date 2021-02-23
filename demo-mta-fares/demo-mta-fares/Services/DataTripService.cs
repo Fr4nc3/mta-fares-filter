@@ -24,22 +24,22 @@ namespace demo_mta_fares.Services
                 .Where(x => x.PickupTaxiZone.Zone.Contains(filter.Pickup) && x.DropOffTaxiZone.Zone.Contains(filter.Dropoff));
             if (filter.validateCarType && filter.CarType != "any")
             {
-                results.Where(x => x.CarType == filter.CarType);
+                 results = results.Where(x => x.CarType == filter.CarType);
 
             }
             if (filter.Distance > 0)
             {
-                results.Where(x => (decimal)x.TripDistance == filter.Distance);
+                 results = results.Where(x => (decimal)x.TripDistance == filter.Distance);
 
             }
             if (filter.passenger > 0)
             {
-                results.Where(x => x.PassengerCount == filter.passenger);
+                 results = results.Where(x => x.PassengerCount == filter.passenger);
 
             }
             if (filter.validateStartDate && filter.validateEndDate)
             {
-                results.Where(x => x.StartDate >= filter.StartDateValid && x.EndDate <= filter.EndDateValid);
+                 results = results.Where(x => x.StartDate >= filter.StartDateValid && x.EndDate <= filter.EndDateValid);
             }
 
             return results.Take(filter.limit).ToList();
